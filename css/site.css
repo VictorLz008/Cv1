@@ -416,8 +416,6 @@ footer{
 }
 
 
-
-
 @media(max-width:1400px)
 {
     .main-content{
@@ -425,79 +423,56 @@ footer{
     }
 
     .resume{
-        width: 100%;
+        width: 70%;
     }
 
     .my-services{
         grid-template-columns: auto;
     }
 }
-@media (max-width: 980px) {
-    body {
-        padding-left: 1rem;
+
+@media(max-width:980px)
+{
+    .main-content{
+        max-width: 700px;
+    }
+
+    .resume{
+        width: 55%;
+    }
+
+    .my-services{
+        grid-template-columns: auto;
+    }
+
+    .timeline-content > div{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:768px)
+{
+    body{
+        padding-left:1rem ;
         padding-right: 1rem;
     }
 
-    .main-content {
+    .main-content{
         max-width: 100%;
         flex-direction: column;
     }
 
-    .profile {
+    .profile{
         position: initial;
         width: 100%;
     }
 
-    .resume {
-        width: 100%;
+    .resume{
         margin: unset;
-    }
-
-    .my-services {
-        grid-template-columns: auto;
-    }
-
-    .timeline-content > div {
-        flex-direction: column;
-    }
-
-        img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .modal img {
-        max-width: 90%;
-        max-height: 90vh;
-        object-fit: contain;
+        width: 100%;
     }
 }
 
-@media (max-width: 768px) {
-    /* Contenedores más pequeños en móviles */
-    .main-content,
-    .profile,
-    .resume {
-        width: 95%;
-        margin: auto;
-    }
-
-    .my-services {
-        grid-template-columns: 1fr;
-    }
-
-    /* Ajustar imágenes para que no se desborden */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .modal img {
-        max-width: 90%;
-        max-height: 90vh;
-        object-fit: contain;
-    }
-}
 
 
 
