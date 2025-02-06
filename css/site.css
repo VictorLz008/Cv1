@@ -463,7 +463,18 @@ footer{
     }
 }
 
+.modal img {
+    max-width: 80%; /* La imagen ocupará como máximo el 80% del ancho del modal */
+    max-height: 80vh; /* Evita que la imagen sea más alta que la pantalla */
+    display: block; /* Para evitar márgenes extras */
+    margin: auto; /* Centra la imagen dentro del modal */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
 
+    .modal img {
+        max-width: 90%;
+        max-height: 60vh;
+    }
 
 @media (max-width: 768px) {
     /* Contenedores más pequeños en móviles */
