@@ -439,7 +439,7 @@ footer{
     .main-content {
         max-width: 100%;
         margin-top: 5rem;
-        margin-right: 2rem;
+
         flex-direction: column;
     }
 
@@ -463,9 +463,7 @@ footer{
     }
 }
 
-.portfolio img{
-    max-width: 70%;
-}
+
 
 @media (max-width: 768px) {
     /* Contenedores más pequeños en móviles */
@@ -483,10 +481,7 @@ footer{
         grid-template-columns: 1fr;
     }
 
-    /* Ajustar imágenes para que no se desborden */
-    .portfolio img{
-        max-width: 60%;
-    }
+    
 }
 
 
