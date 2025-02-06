@@ -439,7 +439,7 @@ footer{
     .main-content {
         max-width: 100%;
         margin-top: 5rem;
-
+        margin-right: 1rem;
         flex-direction: column;
     }
 
@@ -464,11 +464,11 @@ footer{
 }
 
 .modal img {
-    max-width: 80%; /* La imagen ocupará como máximo el 80% del ancho del modal */
-    max-height: 80vh; /* Evita que la imagen sea más alta que la pantalla */
-    display: block; /* Para evitar márgenes extras */
-    margin: auto; /* Centra la imagen dentro del modal */
-    border-radius: 10px; /* Opcional: bordes redondeados */
+    max-width: 80%;
+    max-height: 80vh; 
+    display: block; 
+    margin: auto;
+    border-radius: 10px; 
 }
 
     .modal img {
@@ -477,7 +477,7 @@ footer{
     }
 
 @media (max-width: 768px) {
-    /* Contenedores más pequeños en móviles */
+
     .main-content,
     .profile,
     .resume {
@@ -486,7 +486,7 @@ footer{
     }
 
     body {
-        padding-top: 200px; /* Ajusta según sea necesario */
+        padding-top: 200px; 
     }
     .my-services {
         grid-template-columns: 1fr;
