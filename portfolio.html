@@ -1,0 +1,78 @@
+<header>
+    
+    <link rel="shortcut icon" href="media/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link href="css/css-gg.css" rel="stylesheet" />
+    <script src="js/site.js"></script>
+
+
+</header>
+
+<body>
+    <div class="main-content">
+        <aside>
+            <div class="profile">
+                <img src="resources/foto.jpg" alt="Imagen de perfil" id="photo-profile" class="my-photo">
+        
+                <div>
+                    <h1 class="title">Victor Lopez Solares</h1>
+                    <div class="badge-profile">Tecnico</div>
+                    <div class="profile">
+                        <div class="social">
+                            <a href="https://github.com/VictorLz008/Proyectos.git" target="_blank"><i class="gg-twitter"></i></a>
+                            <a href="https://www.youtube.com/@victorsolares2067" target="_blank"><i class="gg-youtube"></i></a>
+                            <a href="https://www.facebook.com/victor.solares.5203/" target="_blank"><i class="gg-facebook"></i></a>
+                            <link rel="stylesheet" href="">
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="contacts-block">
+                        <li class="contacts-block-item">
+                            <i class="gg-calendar"></i>&nbsp;14 de Septiembre del 2000
+                        </li>
+                        <li class="contacts-block-item">
+                            <i class="gg-pin"></i>&nbsp;Puebla, Puebla
+                        </li>
+                        <li class="contacts-block-item">
+                            <i class="gg-mail"></i>&nbsp;<a
+                                href="mailto:vsolareslz@hotmail.com">vsolareslz@hotmail.com</a>
+                        </li>
+                        <li class="contacts-block-item">
+                            <i class="gg-phone"></i>&nbsp;+52 2212509465 
+                        </li>
+                    </ul>
+                    <a href="/Site/resources/Cv.pdf" class="btn">Descargar CV</a>
+                </div>
+            </div>
+        </aside>
+        <section class="resume">
+            <h2 class="title bordered">Portfolio</h2>
+            <div>
+                <div class="portfolio">
+                    <img src="./resources/Certificado1.jpeg"onclick="showImage(this)";>
+                    <img src="./resources/Certificado2.jpeg"onclick="showImage(this)";>
+                    <img src="./resources/Certificado3.jpeg"onclick="showImage(this)";>
+                    <img src="./resources/Certificado4.jpeg"onclick="showImage(this)";>
+                    <img src="./resources/cerftificado5.jpeg"onclick="showImage(this)";>
+
+                </div>
+                <div class="modal" id="preview">
+                    <button class="close-modal" onclick="cerrarModal()"><i class="gg-close"></i></button>
+                </div>
+
+            </div>
+
+            <header>
+                <div class="menu-circle" onclick="toggleMenu()">
+                    <i class="gg-menu-oreos"></i>
+                </div>
+                <div class="inner-menu js-menu">
+                    <ul class="nav">
+
+                        <li class="nav_item"><a href="/Site/index.html">inicio</a></li>
+                    </ul>
+                </div>
+            </header>
+        </section>
