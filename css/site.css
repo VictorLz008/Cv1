@@ -416,63 +416,90 @@ footer{
 }
 
 
-@media(max-width:1400px)
-{
-    .main-content{
+ 
+@media (max-width: 1400px) {
+    .main-content {
         max-width: 1100px;
     }
 
-    .resume{
-        width: 70%;
+    .resume {
+        width: 100%;
     }
 
-    .my-services{
-        grid-template-columns: auto;
+    .my-services {
+        grid-template-columns: 1fr;
     }
 }
 
-@media(max-width:1100px)
-{
-    .main-content{
-        max-width: 700px;
+@media (max-width: 980px) {
+
+
+    .main-content {
+        max-width: 100%;
+        margin-top: 5rem;
+        margin-right: 5rem;
+        flex-direction: column;
     }
 
-    .resume{
-        width: 55%;
+    .profile {
+        position: relative;
+        width: 95%;
+        margin: auto;
     }
 
-    .my-services{
-        grid-template-columns: auto;
+    .resume {
+        width: 95%;
+        margin: auto;
     }
 
-    .timeline-content > div{
+    .my-services {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-content > div {
         flex-direction: column;
     }
 }
 
-@media(max-width:980px)
-{
-    body{
-        padding-left:1rem ;
-        padding-right: 1rem;
-    }
-
-    .main-content{
-        max-width: 90%;
-        flex-direction: column;
-    }
-
-    .profile{
-        position: initial;
-        width: 90%;
-    }
-
-    .resume{
-        margin: unset;
-        width: 90%;
-    }
+img {
+    max-width: 100%;
+    height: auto;
 }
 
+.modal img {
+    max-width: 50%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    /* Contenedores más pequeños en móviles */
+    .main-content,
+    .profile,
+    .resume {
+        width: 98%;
+        margin: auto;
+    }
+
+    body {
+        padding-top: 200px; /* Ajusta según sea necesario */
+    }
+    .my-services {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajustar imágenes para que no se desborden */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .modal img {
+        max-width: 50%;
+        max-height: 90vh;
+        object-fit: contain;
+    }
+}
 
 
 
