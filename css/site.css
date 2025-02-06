@@ -416,24 +416,24 @@ footer{
 }
 
 
-@media(max-width:1400px)
-{
-    .main-content{
+
+@media (max-width: 1400px) {
+    .main-content {
         max-width: 1100px;
     }
 
-    .resume{
-        width: 70%;
+    .resume {
+        width: 100%;
     }
 
-    .my-services{
-        grid-template-columns: auto;
+    .my-services {
+        grid-template-columns: 1fr;
     }
 }
+
 @media (max-width: 980px) {
     body {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: 1rem;
     }
 
     .main-content {
@@ -442,21 +442,48 @@ footer{
     }
 
     .profile {
-        position: initial;
-        width: 100%;
+        position: relative;
+        width: 90%;
+        margin: auto;
     }
 
     .resume {
-        width: 100%;
-        margin: unset;
+        width: 90%;
+        margin: auto;
     }
 
     .my-services {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
     }
 
     .timeline-content > div {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Contenedores más pequeños en móviles */
+    .main-content,
+    .profile,
+    .resume {
+        width: 95%;
+        margin: auto;
+    }
+
+    .my-services {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajustar imágenes para que no se desborden */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .modal img {
+        max-width: 90%;
+        max-height: 90vh;
+        object-fit: contain;
     }
 }
 
